@@ -1,0 +1,72 @@
+[
+    {
+        "$id": "1",
+        "user_id": "1",
+        "name": "Grand Villa",
+        "description": "A spacious villa with modern amenities, suitable for large families.",
+        "sqft": 3000,
+        "capacity": 100,
+        "location": "Building A, 3rd Floor",
+        "address": "555 California St, Mumbai, MH",
+        "amenities": "Lawn, Swiming Pool, Tennis Court, Wi-Fi, Sound System",
+        "availability": "9 AM - 5 PM",
+        "price_per_hour": 1500,
+        "image": "room-1.jpg"
+    },
+    {
+        "$id": "2",
+        "user_id": "1",
+        "name": "Small Forest Room",
+        "description": "Ideal for small family who wants to be away from crowd.",
+        "sqft": 500,
+        "capacity": 8,
+        "location": "Building B, 2nd Floor",
+        "address": "100 Park Lawn, Bhopal, MP",
+        "amenities": "Lawn, Refrigirator, AC, Wi-Fi, Sound System",
+        "availability": "8 AM - 6 PM",
+        "price_per_hour": 800,
+        "image": "room-2.jpg"
+    },
+    {
+        "$id": "3",
+        "user_id": "1",
+        "name": "Creative Place",
+        "description": "A vibrant space designed for good times.",
+        "sqft": 800,
+        "capacity": 15,
+        "location": "Building C, 1st Floor",
+        "address": "1600 Amphitheatre Parkway, Indore, MP",
+        "amenities": "Refrigirator, Television, Wi-Fi",
+        "availability": "10 AM - 4 PM",
+        "price_per_hour": 580,
+        "image": "room-3.jpg"
+    },
+    {
+        "$id": "4",
+        "user_id": "2",
+        "name": "Village Room",
+        "description": "Equipped with the latest technology, at the heart of a village.",
+        "sqft": 1500,
+        "capacity": 50,
+        "location": "Home D, Ground Floor",
+        "address": "1 Raipur road, Raipur, CG",
+        "amenities": "Television, Bed, Water",
+        "availability": "9 AM - 6 PM",
+        "price_per_hour": 720,
+        "image": "room-4.jpg"
+    },
+    {
+        "$id": "5",
+        "user_id": "2",
+        "name": "Quiet Forest Room",
+        "description": "A small, quiet space in the middle of forest.",
+        "sqft": 200,
+        "capacity": 10,
+        "location": "Cottage E",
+        "address": "10 Living St, Badlapur, MH, India",
+        "amenities": "Television, Bed, Water, Wi-Fi",
+        "availability": "7 AM - 7 PM",
+        "price_per_hour": 600,
+        "image": "room-5.jpg"
+    }
+]
