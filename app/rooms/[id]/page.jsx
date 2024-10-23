@@ -10,6 +10,11 @@ const RoomPage = async ({ params }) => {
     const room = await getSingleRoom(id);
     if (!room) return <Heading title='Room Not Found' />;
 
+    const bucketId = process.env.NEXT_PUBLIC_APPWRITE_ROOMS_STORAGE_BUCKET;
+    const projectId = process.env.NEXT_PUBLIC_APPWRITE_PROJECT;
+    const imageUrl = `https://cloud.appwrite.io/v1/storage/buckets/${bucketId}/files/${room.image}/view?project=${projectId}`;
+    const imageSrc = room.image ? imageUrl : '/images/no-image.jpg';
+
     return (
         <>
             <Heading title={room.name} />
@@ -19,7 +24,7 @@ const RoomPage = async ({ params }) => {
                     <span className='ml-2'>Back to Rooms</span>
                 </Link>
                 <div className='flex flex-col sm:flex-row sm:space-x-6'>
-                    <Image src={`/images/rooms/${room.image}`} alt={room.name} width={400} height={100} className='w-full sm:w-1/3 h-64 object-cover rounded-lg' />
+                    <Image src={imageSrc} alt={room.name} width={400} height={100} className='w-full sm:w-1/3 h-64 object-cover rounded-lg' />
                     <div className='mt-4 sm:mt-0 sm:flex-1'>
                         <p className='text-gray-600 mb-4'>{room.description}</p>
                         <ul className='space-y-2'>
